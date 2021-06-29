@@ -1,0 +1,400 @@
+# Configuration file
+
+admin {
+    S:"Force Remove Entity Names" <
+     >
+    I:"Force Remove Entity Ticks"=40
+}
+
+
+altars {
+    B:"Altars Enabled"=true
+    B:"Check Dimension"=false
+    D:"Damage Altar Stat Multiplier"=4.0
+    D:"Defense Altar Stat Multiplier"=4.0
+    D:"Effect Altar Stat Multiplier"=4.0
+    D:"Haste Altar Stat Multiplier"=4.0
+    D:"Health Altar Stat Multiplier"=10.0
+    D:"Pierce Altar Stat Multiplier"=4.0
+    D:"Speed Altar Stat Multiplier"=1.5
+}
+
+
+"base starting level" {
+    D:"Level Gain Per Day"=0.0
+    I:"Level Gain Per Day Max"=100
+    D:"Level Gain Per Local Difficulty"=1.5
+    I:"Starting Level Max"=1
+    I:"Starting Level Min"=1
+}
+
+
+beastiary {
+    D:"Add Creature On Kill Chance"=0.15
+    B:"Beastiary Knowledge Messages"=true
+}
+
+
+bosses {
+    D:"How much higher players must be relative to a boss' y position (feet) to trigger anti flight measures."=3.0
+}
+
+
+client {
+    B:"Disable Block Particles"=false
+    B:"Disable Model Alpha"=false
+    I:"Idle Sound Ticks"=100
+    B:"Model Multipass"=true
+    B:"Subspecies Tags"=true
+}
+
+
+"custom item drops" {
+}
+
+
+##########################################################################################################
+# debug
+#--------------------------------------------------------------------------------------------------------#
+# Set debug options to true to show extra debugging information in the console.
+##########################################################################################################
+
+debug {
+    B:Attack=false
+    B:Creature=false
+    B:"Creature Group"=false
+    B:"Creature Type"=false
+    B:Dungeon=false
+    B:Element=false
+    B:Equipment=false
+    B:ItemSetup=false
+    B:Items=false
+    B:JSONSpawner=false
+    B:Language=false
+    B:Localisation=false
+    B:"Mob Spawn Egg"=false
+    B:MobEvents=false
+    B:MobSetup=false
+    B:MobSpawns=false
+    B:Model=false
+    B:Models=false
+    B:Overlay=false
+    B:Packets=false
+    B:Projectile=false
+    B:Subspecies=false
+}
+
+
+"default item drops" {
+    S:"Global Drops"=
+}
+
+
+"difficulty multipliers" {
+    D:"easy amplifier"=0.8
+    D:"easy armor"=1.0
+    D:"easy attackSpeed"=0.8
+    D:"easy damage"=0.8
+    D:"easy defense"=0.8
+    D:"easy effect"=0.8
+    D:"easy health"=0.8
+    D:"easy pierce"=0.8
+    D:"easy rangedSpeed"=0.8
+    D:"easy sight"=1.0
+    D:"easy speed"=1.0
+    D:"hard amplifier"=1.1
+    D:"hard armor"=1.0
+    D:"hard attackSpeed"=1.5
+    D:"hard damage"=1.1
+    D:"hard defense"=1.1
+    D:"hard effect"=1.1
+    D:"hard health"=1.1
+    D:"hard pierce"=1.1
+    D:"hard rangedSpeed"=1.5
+    D:"hard sight"=1.0
+    D:"hard speed"=1.1
+    D:"normal amplifier"=1.0
+    D:"normal armor"=1.0
+    D:"normal attackSpeed"=1.0
+    D:"normal damage"=1.0
+    D:"normal defense"=1.0
+    D:"normal effect"=1.0
+    D:"normal health"=1.0
+    D:"normal pierce"=1.0
+    D:"normal rangedSpeed"=1.0
+    D:"normal sight"=1.0
+    D:"normal speed"=1.0
+}
+
+
+"dungeon loot enabled" {
+    B:Blacksmiths=true
+    B:Dungeons=true
+    B:Strongholds=true
+}
+
+
+dungeons {
+    I:"Dungeon Distance"=45
+    B:"Dungeons Enabled"=true
+}
+
+
+effects {
+    B:"aphagia enabled"=true
+    B:"bleed enabled"=true
+    B:"cleansed enabled"=true
+    B:"decay enabled"=true
+    B:"envenom enabled"=true
+    B:"fallresist enabled"=true
+    B:"fear enabled"=true
+    B:"freezeaura enabled"=true
+    B:"heataura enabled"=true
+    B:"immunization enabled"=true
+    B:"insomnia enabled"=true
+    B:"instability enabled"=true
+    B:"leech enabled"=true
+    B:"lifeleak enabled"=true
+    B:"paralysis enabled"=true
+    B:"penetration enabled"=true
+    B:"plague enabled"=true
+    B:"rage enabled"=true
+    B:"recklessness enabled"=true
+    B:"rejuvenation enabled"=true
+    B:"repulsion enabled"=true
+    B:"smited enabled"=true
+    B:"smouldering enabled"=true
+    B:"staticaura enabled"=true
+    B:"swiftswimming enabled"=true
+    B:"weight enabled"=true
+}
+
+
+##########################################################################################################
+# extras
+#--------------------------------------------------------------------------------------------------------#
+# Other extra config settings, some of the aren't necessarily specific to Lycanites Mobs.
+##########################################################################################################
+
+extras {
+    # Set to true to prevent players from dismounting from Lycanites Mobs mounts when pressing shift (useful for shift to fly/swim down).
+    B:"Disable Sneak Dismount"=true
+    S:"Familiar Username Blacklist" <
+        Jbams
+     >
+    B:"Version Checker"=false
+}
+
+
+features {
+    I:"Abtu Swarm Limit"=5
+    B:"Aegis Chest Protection"=false
+    B:"Beholder Griefing"=true
+    B:"Cacodemon Griefing"=true
+    B:"Calpod Griefing"=true
+    I:"Calpod Swarm Limit"=5
+    I:"Concapede Size Limit"=10
+    I:"Eechetik Mycelium Radius"=2
+    B:"Enable Doomfire"=true
+    B:"Enable Frostclouds"=true
+    B:"Enable Frostfire"=true
+    B:"Enable Frostwebs"=true
+    B:"Enable Hellfire"=true
+    B:"Enable Icefire"=true
+    B:"Enable Poison Clouds"=true
+    B:"Enable Poop Clouds"=true
+    B:"Enable Quickweb"=true
+    B:"Enable Scorchfire"=true
+    B:"Enable Shadowfire"=true
+    B:"Epion Griefing"=true
+    B:"Ettin Griefing"=true
+    B:"Geist Shadowfire Death"=true
+    I:"Gorgomite Swarm Limit"=5
+    B:"Khalk Lava Death"=true
+    B:"Kobold Thievery"=true
+    B:"Kobold Torch Griefing"=true
+    I:"Nymph Healing Rate"=20
+    I:"Rare Geonach Block Break Radius"=0
+    B:"Rare Lobber Melting"=true
+    I:"Rare Vapula Block Break Radius"=0
+    B:"Remove Doomfire on No Fire Tick"=false
+    B:"Remove Frostfire on No Fire Tick"=false
+    B:"Remove Hellfire On No Fire Tick"=false
+    B:"Remove Scorchfire on No Fire Tick"=false
+    B:"Remove Shadowfire on No Fire Tick"=false
+    I:"Roa Whirlpool Range"=6
+    B:"Roc Creeper Dropping"=true
+    B:"Shadowfire Blindness"=true
+    I:"Spriggan Minion Crop Boosting"=20
+    I:"Thresher Whirlpool Range"=8
+    I:"Tremor Explosion Strength"=1
+    B:"Troll Griefing"=true
+    B:"Vespid Hive Building"=true
+    I:"Vespid Queen Swarm Limit"=10
+    I:"Volcan Block Melting Radius"=2
+    S:"Yale Shear Drop"=minecraft:wool,0,1,3,1.0
+}
+
+
+fire {
+    B:"Remove On No Fire Tick"=true
+}
+
+
+"food effect durations" {
+    I:"Cooked Buffs"=20
+    I:"Feast Buffs"=120
+    I:"Meal Buffs"=60
+    I:"Raw Debuffs"=10
+}
+
+
+"food healing" {
+    I:"Cooked Healing"=2
+    I:"Feast Healing"=8
+    I:"Meal Healing"=4
+}
+
+
+gui {
+    B:"Show Inventory Tabs"=true
+}
+
+
+"mob interaction" {
+    B:"Animals Fight Back"=false
+    B:"Disable Pickup Offset"=false
+    B:"Elemental Fusion"=10.0
+    B:"Global Drown Immunity"=false
+    B:"Global Suffocation Immunity"=false
+    B:"Mobs Attack Villagers"=true
+    B:"Pack Treat Luring"=false
+    B:"Predators Attack Animals"=true
+}
+
+
+"mob level multipliers" {
+    D:amplifier=0.01
+    D:armor=0.0
+    D:attackSpeed=0.01
+    D:damage=0.02
+    D:defense=0.01
+    D:effect=0.02
+    D:health=0.1
+    D:pierce=0.02
+    D:rangedSpeed=0.01
+    D:sight=0.0
+    D:speed=0.01
+}
+
+
+"mob variations" {
+    D:"Random Size Max"=1.2
+    D:"Random Size Min"=0.8
+    B:"Random Sizes"=true
+    I:"Subspecies Base Weight"=400
+    B:"Subspecies Can Spawn"=true
+    B:"Subspecies Rare Despawning"=true
+    D:"Subspecies Rare Experience Scale"=10.0
+    B:"Subspecies Rare Health Bars"=true
+    I:"Subspecies Rare Item Drops Scale"=5
+    I:"Subspecies Rare Spawn Day Min"=0
+    I:"Subspecies Rare Weight"=2
+    D:"Subspecies Uncommon Experience Scale"=2.0
+    I:"Subspecies Uncommon Item Drops Scale"=2
+    I:"Subspecies Uncommon Spawn Day Min"=0
+    I:"Subspecies Uncommon Weight"=20
+    I:"Variant Base Weight"=400
+    B:"Variant Rare Despawning"=false
+    D:"Variant Rare Experience Scale"=10.0
+    B:"Variant Rare Health Bars"=false
+    I:"Variant Rare Item Drops Scale"=5
+    I:"Variant Rare Spawn Day Min"=0
+    I:"Variant Rare Weight"=2
+    D:"Variant Uncommon Experience Scale"=2.0
+    I:"Variant Uncommon Item Drops Scale"=2
+    I:"Variant Uncommon Spawn Day Min"=0
+    I:"Variant Uncommon Weight"=20
+    B:"Variants Can Spawn"=true
+}
+
+
+pets {
+    B:"Flying Mounting"=true
+    B:"Friendly Fire"=3600
+    B:Mounting=true
+    B:"Owner Tags"=true
+    B:Taming=true
+}
+
+
+player {
+    I:"Spirit Recharge"=1
+    I:"Summoning Focus Recharge"=1
+    I:"Summoning Pedestal Redstone Time"=1200
+}
+
+
+"potion effects" {
+    B:"Disable Nausea Debuff"=false
+    B:"Enable Custom Effects"=true
+}
+
+
+"seasonal item drop chance" {
+    D:Seasonal=0.10000000149011612
+}
+
+
+"subspecies multipliers" {
+    D:"rare amplifier"=1.5
+    D:"rare armor"=1.5
+    D:"rare attackSpeed"=1.5
+    D:"rare damage"=1.5
+    D:"rare defense"=1.5
+    D:"rare effect"=1.5
+    D:"rare health"=20.0
+    D:"rare pierce"=1.5
+    D:"rare rangedSpeed"=1.5
+    D:"rare sight"=1.5
+    D:"rare speed"=2.0
+    D:"uncommon amplifier"=1.25
+    D:"uncommon armor"=1.25
+    D:"uncommon attackSpeed"=1.25
+    D:"uncommon damage"=1.25
+    D:"uncommon defense"=1.25
+    D:"uncommon effect"=1.25
+    D:"uncommon health"=2.0
+    D:"uncommon pierce"=1.25
+    D:"uncommon rangedSpeed"=1.25
+    D:"uncommon sight"=1.25
+    D:"uncommon speed"=1.5
+}
+
+
+"variant multipliers" {
+    D:"rare amplifier"=1.5
+    D:"rare armor"=1.5
+    D:"rare attackSpeed"=1.5
+    D:"rare damage"=1.5
+    D:"rare defense"=1.5
+    D:"rare effect"=1.5
+    D:"rare health"=20.0
+    D:"rare pierce"=1.5
+    D:"rare rangedSpeed"=1.5
+    D:"rare sight"=1.5
+    D:"rare speed"=2.0
+    D:"uncommon amplifier"=1.25
+    D:"uncommon armor"=1.25
+    D:"uncommon attackSpeed"=1.25
+    D:"uncommon damage"=1.25
+    D:"uncommon defense"=1.25
+    D:"uncommon effect"=1.25
+    D:"uncommon health"=2.0
+    D:"uncommon pierce"=1.25
+    D:"uncommon rangedSpeed"=1.25
+    D:"uncommon sight"=1.25
+    D:"uncommon speed"=1.5
+}
+
+

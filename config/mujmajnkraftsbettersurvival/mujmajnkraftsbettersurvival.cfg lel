@@ -1,0 +1,208 @@
+# Configuration file
+
+"enchantments max level" {
+    I:agility=2
+    I:arrowrecovery=3
+    I:assassinate=3
+    I:bash=3
+    I:blast=2
+    I:blockpower=3
+    I:combo=3
+    I:"diamonds everywere"=3
+    I:disarm=3
+    I:education=2
+    I:fling=2
+    I:heavy=1
+    I:"high jump"=2
+    I:multishot=3
+    I:penetration=5
+    I:range=1
+    I:"rapid fire"=3
+    I:reflection=3
+    I:smelting=1
+    I:spellshield=3
+    I:tunneling=2
+    I:vampirism=2
+    I:versatility=1
+    I:vitality=0
+    I:weightless=1
+}
+
+
+is_treasure {
+    B:enchantment.mujmajnkraftsbettersurvival.agility=false
+    B:enchantment.mujmajnkraftsbettersurvival.arrowrecovery=false
+    B:enchantment.mujmajnkraftsbettersurvival.assassinate=false
+    B:enchantment.mujmajnkraftsbettersurvival.bash=false
+    B:enchantment.mujmajnkraftsbettersurvival.blast=false
+    B:enchantment.mujmajnkraftsbettersurvival.blockpower=false
+    B:enchantment.mujmajnkraftsbettersurvival.combo=false
+    B:enchantment.mujmajnkraftsbettersurvival.diamonds=false
+    B:enchantment.mujmajnkraftsbettersurvival.disarm=false
+    B:enchantment.mujmajnkraftsbettersurvival.education=false
+    B:enchantment.mujmajnkraftsbettersurvival.fling=false
+    B:enchantment.mujmajnkraftsbettersurvival.heavy=false
+    B:enchantment.mujmajnkraftsbettersurvival.highjump=false
+    B:enchantment.mujmajnkraftsbettersurvival.multishot=false
+    B:enchantment.mujmajnkraftsbettersurvival.penetration=false
+    B:enchantment.mujmajnkraftsbettersurvival.range=false
+    B:enchantment.mujmajnkraftsbettersurvival.rapidfire=false
+    B:enchantment.mujmajnkraftsbettersurvival.reflection=false
+    B:enchantment.mujmajnkraftsbettersurvival.smelting=false
+    B:enchantment.mujmajnkraftsbettersurvival.spellshield=false
+    B:enchantment.mujmajnkraftsbettersurvival.tunneling=false
+    B:enchantment.mujmajnkraftsbettersurvival.vampirism=false
+    B:enchantment.mujmajnkraftsbettersurvival.versatility=false
+    B:enchantment.mujmajnkraftsbettersurvival.vitality=false
+    B:enchantment.mujmajnkraftsbettersurvival.weightless=false
+}
+
+
+material_stats {
+    D:mujmajnkraftsbettersurvival.configgui.aluminium_stats <
+        2.0
+        220.0
+        12.0
+        1.7999999523162842
+        14.0
+     >
+    D:mujmajnkraftsbettersurvival.configgui.bronze_stats <
+        2.0
+        200.0
+        6.0
+        1.7999999523162842
+        14.0
+     >
+    D:mujmajnkraftsbettersurvival.configgui.copper_stats <
+        1.0
+        160.0
+        5.0
+        1.0
+        5.0
+     >
+    D:mujmajnkraftsbettersurvival.configgui.electrum_stats <
+        0.0
+        32.0
+        15.0
+        0.6000000238418579
+        35.0
+     >
+    D:mujmajnkraftsbettersurvival.configgui.enderium_stats <
+        3.0
+        1000.0
+        10.0
+        4.0
+        20.0
+     >
+    D:mujmajnkraftsbettersurvival.configgui.invar_stats <
+        2.0
+        250.0
+        6.5
+        2.0999999046325684
+        10.0
+     >
+    D:mujmajnkraftsbettersurvival.configgui.lumium_stats <
+        2.0
+        600.0
+        12.0
+        2.5
+        14.0
+     >
+    D:mujmajnkraftsbettersurvival.configgui.signalum_stats <
+        2.0
+        500.0
+        10.0
+        2.0
+        14.0
+     >
+    D:mujmajnkraftsbettersurvival.configgui.silver_stats <
+        0.0
+        32.0
+        12.0
+        0.5
+        22.0
+     >
+    D:mujmajnkraftsbettersurvival.configgui.steel_stats <
+        2.0
+        350.0
+        6.5
+        2.5
+        14.0
+     >
+}
+
+
+max_level {
+    I:enchantment.mujmajnkraftsbettersurvival.agility=2
+    I:enchantment.mujmajnkraftsbettersurvival.arrowrecovery=3
+    I:enchantment.mujmajnkraftsbettersurvival.assassinate=3
+    I:enchantment.mujmajnkraftsbettersurvival.bash=3
+    I:enchantment.mujmajnkraftsbettersurvival.blast=2
+    I:enchantment.mujmajnkraftsbettersurvival.blockpower=3
+    I:enchantment.mujmajnkraftsbettersurvival.combo=3
+    I:enchantment.mujmajnkraftsbettersurvival.diamonds=3
+    I:enchantment.mujmajnkraftsbettersurvival.disarm=3
+    I:enchantment.mujmajnkraftsbettersurvival.education=3
+    I:enchantment.mujmajnkraftsbettersurvival.fling=2
+    I:enchantment.mujmajnkraftsbettersurvival.heavy=1
+    I:enchantment.mujmajnkraftsbettersurvival.highjump=2
+    I:enchantment.mujmajnkraftsbettersurvival.multishot=3
+    I:enchantment.mujmajnkraftsbettersurvival.penetration=5
+    I:enchantment.mujmajnkraftsbettersurvival.range=1
+    I:enchantment.mujmajnkraftsbettersurvival.rapidfire=5
+    I:enchantment.mujmajnkraftsbettersurvival.reflection=3
+    I:enchantment.mujmajnkraftsbettersurvival.smelting=1
+    I:enchantment.mujmajnkraftsbettersurvival.spellshield=3
+    I:enchantment.mujmajnkraftsbettersurvival.tunneling=2
+    I:enchantment.mujmajnkraftsbettersurvival.vampirism=2
+    I:enchantment.mujmajnkraftsbettersurvival.versatility=1
+    I:enchantment.mujmajnkraftsbettersurvival.vitality=1
+    I:enchantment.mujmajnkraftsbettersurvival.weightless=1
+}
+
+
+other {
+    B:AllowVanillaShields=true
+    B:FOV=true
+    B:integration=true
+
+    # When set flase, vanilla shield recipe is disabled forcing player to use this mod's shields
+    B:mujmajnkraftsbettersurvival.configgui.allow_vanilla_shields=true
+
+    # When set to true, your movement speed won't effect your field of view.
+    B:mujmajnkraftsbettersurvival.configgui.fov=true
+
+    # When set to true, you can craft weapons from materials from other mods
+    B:mujmajnkraftsbettersurvival.configgui.integration=true
+}
+
+
+"treasure enchantments" {
+    B:agility=false
+    B:arrowrecovery=false
+    B:assassinate=false
+    B:bash=false
+    B:blast=false
+    B:blockpower=false
+    B:combo=false
+    B:diamonds=false
+    B:disarm=false
+    B:education=false
+    B:fling=false
+    B:heavy=false
+    B:highjump=false
+    B:multishot=false
+    B:penetration=false
+    B:range=false
+    B:rapidfire=false
+    B:reflection=false
+    B:smelting=false
+    B:spellshield=false
+    B:tunneling=false
+    B:vampirism=false
+    B:versatility=false
+    B:vitality=false
+    B:weightless=false
+}
+
+

@@ -1,0 +1,3 @@
+<root>
+   <chest class="noppes.vc.containers.ContainerCrate" row_size="9" large_chest="false"/> <!-- Chests to show the sorting modes buttons on -->
+</root>

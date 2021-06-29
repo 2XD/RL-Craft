@@ -1,0 +1,221 @@
+RLCraft 2.8.2 Changelog - THE BOSS UPDATE
+
+Note:  This is a small update to bring most of the mods up to date and lay the groundwork for the upcoming v2.9 quest book update.  And because I know a million people will ask, no Ice n Fire has not been updated yet as that'd require a LOT of balancing changes and would take a lot longer.  I hope to include the new Ice n Fire in v2.9.
+
+IMPORTANT:  If using Optifine, please still use version E3 for 1.12.2, the latest versions F4 and F5 will CRASH.
+
+IMPORTANT 2:  You do NOT need to generate a new world, HOWEVER, there are some new structures you won't see unless you travel to new un-generated land/terrain, and some Lycanite ID's have changed, mainly creature charges and food, so those will vanish upon loading old worlds and changes need to be confirmed.  Servers, remember to do "/fml confirm" when loading old worlds in 2.8.2.
+
+Overall Quick Summary:
+
+This update adds a new boss, Amalgalich, fixes overall boss health accidentally being capped, fixes some HUGE lag issues for servers regarding multimine and some other AI, allowing small servers with 10 to 20 players to run smoothly now without tweaking anything, brings lycanites up to date with pet and mount leveling, lycanite part leveling, all new parts and abilities from lycanite tools, new models for a lot of lycanite creatures, some new mobs from lycanites, few new structures, and generally a lot of quality of life improvements/bug fixes.  All notes and changes listed below.
+
+General:
+
+-BOSSES have gotten a rather significant health boost.  Scaling Health was accidentally capping mob health to 2048, when bosses like Lycanite bosses were supposed to have around 5000 health.  This cap has now been increased to 69420 (lmao) fixing boss health...so if you defeated a Lycanite boss before...go do it again now =).
+-Oh, side note, you can no longer place or break blocks when near a Lycanite boss, have fun =).
+-Fixed a HUGE lag issue regarding multimine, omegapog!  Should no longer kill servers.
+-Added AI Reducer made by Charles, fixes another massive lag issue regarding Myrmex, Death Worms, and a few things via rabbits and villagers AI, thanks Charles!
+-Added RLTWeaker, specially made mod for RLCraft (THANKS CHARLES, POG <3) fixes SEVERAL broken enchantments, fixes large structures taking forever to generate, as well as cleans up the reccomplex-structuredata.dat automatically now, preventing the awful memory leak, POG!
+-RLTweaker enchantment fixes: Fixes Upgraded Potentials from being applied to stacks and blocks it wasn't supposed to, fixes crashes related to Arc Slash, Empowered Defense, Evasion, Freezing, and Parry enchantments, and fixes Unreasonable enchantment from causing weapons to not do damage.
+-Fixed [REDACTED] enchantment (OMEGA SUPER HAMAY KAMAY DUPE BUG BE GONE).
+-Disabled version checking in forge config.
+-Disabled cascading worldgen log in forge config.
+-Forge config removeErroringEntities and removeErroringTileEntities have both been set to true now by default.  This should prevent ticking entity crashes in the future, especially any issues updating from old versions, and generally be a much more stable experience.
+-Fixed runes trying to use minecraft:snow_layer as part of its crafting recipe when that item is not obtainable
+-Disable enchantment Rune: Resurrection which caused a perma broken inventory bug.
+-FrostFire spawn chance for Reivers made to match Fire spawn chance for Cinders.
+-TAN Campfire Spit now allows you to obtain XP from cooking.
+-Doomlike Dungeons updated to use new features such as randomized blocks when generating dungeons for some added variation.
+-Disabled the built in "nvidia" option in Better Foliage, should run better and drastically increase FPS for many users (it didn't even help people with nvidia cards lol).
+-Bountiful Baubles fixed a crash when modifier book items have no NBT.
+-Added recipe to disintgrate flare ammo into spectral silt.
+-Removed Saddle and Pet Armors agility requirement since this was pointless anyway.
+-Fixed scarlite reaver and scarlite razor not requiring attack level requirements.
+-Fixed issue with Scaling Health bandages not applying the correctly amount of health when healing a player.
+-Fixed dupe bug with sandstone/red_sandstone, 4 rocks only output 1 sandstone now instead of 2
+-New death message for SwaggerSouls and Sneegsnag and Zyllama <3.
+-Fixed Oceanic Doomlike Dungeon config trying to use wrong class name for Jengu spawners (yay no more log spam).
+-Fixed the "inventory swap desync" bug caused by right clicking on certain blocks too fast with a GUI while place down animation was happening, like lycanites forges for example.  Blacklisted said blocks from the Fancy Block Particles place down animation, avoiding said bug.
+-Rapid Fire enchantment max level is now 2 instead of 5.  This is a balancing change, as Rapid Fire allows Infinity.  Strafe on the other hand does not allow Infinity, but goes up to level 6 still, giving you instant fire arrows (machinegun meta).
+-Fixed (unfortunately, haha joke get it?) the P_IslandCity from spawning way up in the sky, as this caused massive server lag due to the glitch that caused it to spawn in the sky in the first place.  It will now always spawn correctly at ocean level...but ONLY THIS ONE REEE!
+-Fixed loot in P_IslandCity (the big ass island city that gens in oceans, yes it has some proper loot now woot).
+-Fixed invincible mob from P_DesertDungeon structure spawners.
+-Fixed hobbit hole structure spawning sand and killing servers with falling sand blocks.
+-Fixed Plains City structure, towers are no longer burning down when it generates, fire replaced with glowstone.
+-A few brand new structures courtesy of IceBelly!  RLCraft_PlainsCamp, RLCraft_PlainsWindmill, RLCraft_SmallUndergroundSkeleton, RLCraft_FriendlyOutpost, RLCraft_MegaBattleTower and RLCraft_SmallTown has been updated to now include villagers and loot (new structures will only generate in newly generated chunks if loading on an old world).
+-IceBelly also touched up a few existing structures/dungeons (nicer generation and slight tweaks), pog.
+-Most other mods updated to latest version.
+-Added Boomer.
+
+Lycanite's Mobs:
+
+-NEW OVERWORLD BOSS! The Amalgalich, a colossal undead monstrosity that devours its victims whole! Check http://lycanitesmobs.com/mobevent to see how to summon (in RLCraft, he is an Overworld only boss).
+-BOSS BLOCK PROTECTION! Blocks can no longer be placed or destroyed within the presence of a boss except from effects such as projectiles that place webs or fire.
+-Bosses can no longer be attacked outside of their arena.  Added a status message to warn players that attack bosses from too far away that the boss is not taking damage.
+-Asmodeus boss can now be summoned in any dimension.
+-Asmodeus' arena now uses the new Aberrantstone and their summoning altar is now the same shape as Rahovart and Amalgalich but using a new Aberrant Soulcube in the middle.
+-All new models for a lot of creatures like Ventoraptors, Rocs, Reaper, Jabberwock, Cacodemon and more!
+-New Mob, Pixen! Mischievous little imps that lure their prey into a false sense of security before grouping up and eating them! Pixen spawn in Forests, and will follow the player around giving random buffs. However if you stumble upon 3 or more in a group, they turn on you and attack you with debuffs.
+-New Mob, Krake! Bizarre amphibious creatures often found lurking by rivers or lakes as well as deep within forests. Krakes are both deaf and blind, they taste the air with their mouths and are sensitive to vibrations. Krakes are neutral and will only attack if agitated, sprinting near them will threaten them so be sure to avoid sprinting near these creatures as they are incredibly fast! They're farmable and drop a new meat that when cooked gives Repulsion, knocking back anything that damages you, and also provides immunity to being picked up or latched onto by mobs like Rocs or Darklings!
+-New Mob, Archvile!  Malicious demons that rule of areas of the nether, Archviles enjoy the smell of their victim's burning flesh and enjoy watching other demons tear their victims apart!
+-New Imp Added: Gnekk, plague spreading creatures found lurking underground. Lean pale Imps that cannot fly but use their wings to whip deadly poisonous. Gnekks lurk deep in dark caverns, they have adapted very effectively to this environment. Gnekks are incredibly fast, can climb and glide and attack rapidly at melee range inflicting plague.
+-Mobs now have Variants and Subspecies where Variants replace the color subspecies (Scarlet Pinky) and Subspecies replace the skin subspecies (Moloch Pinky). A mob can have both a subspecies and a variation as well (Verdant Moloch Pinky). Variants have different textures and gain stat increases just like before where as Subspecies have different models and textures and different elements altering certain weaknesses and resistances they have as well as any buffs or debuffs they give.
+-Equipment reworked, mobs only drop level 1 parts now.  Parts can be leveled up with the new Infuser block, using charges that match the element of the part you want to level.  Lots of new parts, descriptions fixed up and made much better, many equipment parts have new and added abilities.
+-Equipment Parts can now be dyed by using dyes in the Equipment Infuser, a Water Bucket can also be used to remove the dye.
+-Charges can also be turned into Experience Bottles by putting an Empty Bottle into the Equipment Infuser with a Charge.
+-Updated the break down recipes of several Equipment Parts so that they all break down into Charge items.
+-Level up pets and mounts!  The Charge items commonly dropped by mobs can now be used to give Experience to Pets and Mounts if one or more elements listed on the Charge item match any of the Pet/Mount's Elements (listed in the Beastiary).
+-Mounts now have a separate dismount key (G key by default), and crouching on a mount will just cause the mount to fly down (flying mounts only).
+-Several smaller pets can now Perch on their owner's shoulder! Right click the pet to perch it and then press the new Dismount / Unperch Key (while not mounted) to unperch the pet (check controls).
+-New Rare Subspecies: The Crimson Epion, a powerful Epion mini-boss that does not explode or burn in sunlight, has increased health and fire rate.
+-New Rare Variant: Phosphorescent Chupacabra, a menacing Chupacabramini-boss that is incredibly fast, and fires chaos orbs out of its oozing mouth.
+-Zoataur completely redesigned.  It is now a Dragon that can spawn in Plains and Deserts with a reduced spawn chance and increased health. It can now also be tamed as a mount with a block ability that will protect the rider!
+-All food buffs and debuffs have been completely reworked and rebalanced, and should give players more incenstive to craft the higher tier food items now.
+-New fluids!  Acid and Poison!  Acid pools generate in wastelands, and spawn Xaphans, and Poison pools generate in swamps, spawning Eechetiks, Gnekks, and Ghouls!
+-Slightly lowered gen chance of surface ooze, acid, and poison pools because of new fluids being added.
+-Pure Lava is now completely changed to Moglava (just a name change).
+-Sweeping attacks added to certain equipment pieces. Sneak to prevent sweep attack.
+-Fixed Equipment area harvesting at vertical angles incorrectly.
+-Fixed Vapula Crystal having a Block Harvest shape at level 3 and invalid harvest properties at level 2.
+-Equipment sweeping attacks now no longer affect players.
+-Fixed a bug where sweeping damage was dealt when equipment weapons were on cooldown.
+-The Astaroth Claw Equipment Part can now rapid fire Devilstars, this replaces the Devilstar Scepter and is much more effective.
+-Striders can now be used as mounts with a pickup ability and if they pickup another pet/mount they will apply water breathing to it, useful for transporting pets underwater.
+-Kobolds numbers have been too high on servers, this is due to them not despawning if they have items in their inventor. In order to save performance, this feature has been disabled, so they will now despawn naturally despite holding stolen items, but will drop said items upon despawning.
+-Drastically increased the effectiveness of Pet Armor.
+-Boosted the damage of Equipment Parts that don't have any or much sweeping range in order to make them competitive for single target damage instead.
+-Many fixes to pet and mount behaviours, especially in regards to pvp settings.
+-Rocs once again should properly drop creepers on your head...kaboom =)
+-Afrits no longer take damage from rain or water (lycanite y u do dis)
+-The Cinderblade Equipment part now glows in the dark because REALISM!
+-Improved Summoning Portal and Laser aiming.
+-World Events will now continue to play and finish even if there are no players on the server, this stops there always being an event waiting for the first player to log in after a few hours.
+-Blocking with shields will now prevent debuffs and other effects from being applied.
+-Increased the amount of experience dropped by all bosses to 10,000.
+-Doubled melee damage of all bosses.
+-Elemental Minions created via Fusion will now copy the pet behaviour of one of the fusion partner Elementals.
+-Charge Items can now only be thrown when sneaking.
+-Optimized Follow AI Goal (lovely performance boost for servers).
+-Fixed items stored in the Equipment Forge or Equipment Infuser not saving or dropping if the block was destroyed.
+-Fixed freshly tamed or summoned creatures having 3X health.
+-Beastiary Pet tab now correctly displays active pet health and experience.
+-Fixed creature level only affecting their Health and not their other stats (aka, higher level creatures will be scarier).
+-Ventoraptor and Uvaraptor speed slightly increased (I mean they are raptors afterall, you shouldn't be able to outrun them =P).
+-Fixed compatibility with dynamic trees, ents now have a chance to spawn when breaking trees again!  As well as a super rare chance for calpods and even the big boy Treant.
+-Gorgomites now have a super rare chance to spawn from breaking ores like geonachs, mwahahaha.
+-Lowered spawn chance of some water mobs like Jengu that were spawning weay too much.
+-Right clicking on a player owned Jengu with a bucket now gives you a bucket of water.
+-Right clicking on a player owned Volcan (fusing Geonach and Cinder) with a bucket now gives you a bucket of lava (yes this means infinite lava).
+-Fixed creatures still attacking you even if you have treats in your hand.  Creatures will still attack however if they are in a pack (usually 3 or more), even if you're holding treats!
+-All mob event spawners now use world ticks instead of player ticks, this will stop them from spawning massive amounts of mobs on servers with players all together in one place.
+-Fixed Rocs and other creatures with a pickup ability being able to pickup bosses (ie ice n fire dragons and sea serpents because it was breaking their AI and lagging servers).
+-Added ooze, frost fire, and ice fire to tough as nails block temperature config so these blocks cool you now when near them.
+-Lycanite dungeon bosses got BUFF!!  Their level has been increased which means overall health and stats have been increased as well, making them more challenging (they've also been fully rebalanced, deeper you go the harder the bosses get).  This is a change due to the 3rd (most powerful) dungeon bosses dropping soulstones now!
+-New Dungeon Added: Aberrant Station
+-New Decorative Blocks Added: Aberrantstone
+-Dungeons now have a 10% chance to spawn large towers above them as well, doubling mini bosses for that dungeon.
+-Fixed the dungeon treasure room not generated on the lowest level.
+-Fixed some dungeon related bugs and generation where rooms would collide into each other messily, or stairs not connecting to the next floor, etc.
+-New Creature Filled Soulstones Added: There is now one Soulstone per Creature Type such as the Imp Soulstone.
+-Mob Events will now adapt the number of mobs spawned around clusters of players in order to keep the events challenging but not over the top in order to maintain gameplay balance and server performance.
+-Added new Diamond Pit sectors to all dungeons.
+-The Leech Effect will now only heal for an exact amount based on it's level, so Leech I will heal for 1 health (half a heart), Leech II for 2 health, etc. This is regardless of damage dealt (including 0 damage).
+-The Penetration Effect will now only deal 25% extra damage per effect amplifier. So Penetration I will now deal 125% damage and Penetration II will now only deal 150% damage (down from 200% damage).
+-Regular Soulkeys will now always spawn regular bosses.
+-Fixed major pathing performance issues caused by large lava mobs such as the Ignibus (1.12.2).
+-Fixed Darklings constantly losing attack target causing them to attack very slowly...aka Darklings are scary again.
+-Swapped the Beastiary to the vanilla Font Renderer, it doesn't look as pretty but it works with optifine now!
+-Fixed a bug where decorative blocks were letting light through them.
+-Fixed a bug where decorative blocks prevented mobs from wandering around randomly on them.
+-Fixed a bug where dungeon bosses where having their loot added multiple times!
+-Yale drop wool again POG!
+-Fixed Swifter Swimming effect!! POG!!!
+
+RLTweaker:
+
+-Fixes the following enchantments: Advanced Mending, Arc Slash, Curse of Possession, Empowered Defense, Evasion, Freezing, Parry, Unreasonable, and Upgraded Potentials.
+-Simple fix for Waystones so village generated Waystones no longer have biome name in them.
+-Fixes rare Mining Fatique crash with Roguelike Dungeons.
+-Fixes the way Recurrent Complex generates larger structures, greatly optimizing and speeding up their generation time (large ocean city took 22 seconds to generate vs the 2 minutes it usually takes).
+-Fixes the memory leak in reccomplex-structuredata.dat, automatically cleaning it up now, and removing the need to delete this manually or set it to read-only (server owners rejoice!).
+-Fix for Ruins eventually causing worldgen lag with its chunk logging.
+-Fix for arrow desync with certain enchantments, causing them to look as if they fly in a different direction than where you fired.
+-Fix for Tough as Nails thirst desync, fixing the glitched thirst bar when going through a nether portal.
+-Fix for Tough as Nails thirst being completely drained when going through nether portals or teleporting long distances (waystones, etc).
+
+Waystones:
+
+-Holding shift while clicking a sort or page button now moves to the front/end immediately.
+-Name generator now chooses randomly from custom names, instead of in order.
+-Fixed warp scroll costing XP.
+-Fixed duplicate waystone entries when using return or bound scroll.
+-Fixed return scrolls pretending to bind to waystones.
+-Dimensional waystones now cost 3 xp levels to travel between.
+
+Tumbleweed:
+
+-Movement is now much smoother.
+-Improved spawning algorithm.
+-Fixed a few crashes and bugs.
+-Tumbleweeds hopefully should no longer pile up in unloaded chunks causing server lag.
+
+Trinkets & Baubles:
+
+-Code cleaned and optimized.
+-Fixed a semi-frequent dupe glitch with the Polarized Stone.
+-Fixed all the issues with the Polarized Stone not properly showing when it's on and off
+-Fixed an issue with the Shield of Honor being able to Ignore damage from sources like /kill.
+-Fixed a Crash when a player attacks a Withered Mob when using the Wither Ring.
+-The Wither Ring now has a Chance to Wither an Enemy when you hit them.
+-The Shield of Honor now reduces explosion damage from all sources instead of just Entities.
+-The Dragon's Eye now prevents the Fire Overlay in First person when on Fire or in Lava.
+-More Compatibility with Enhanced Visuals.
+-The Dragon's Eye now Prevents the Smoke effect when in Lava or Fire added by Enhanced Visuals.
+-The Dragon's Eye also Prevents the "Heat" overlay added by Enhanced Visuals if Tough as Nails is installed.
+-The Stone of the Sea Prevents the Blur effect when you enter/exit water added by Enhanced Visuals.
+-The Shield of Honor Prevents the Screen blur from Explosions added by Enhanced Visuals.
+-Polarized stone, when in repel mode, now drains hunger much quicker, to balance the fact it repels ALL projectiles, making it a function that is to be used situationally, rather than an OP feature you can enable all the time.
+-Polarized stone changed to only go in belt bauble slot.
+-Fairy Dew and Dwarf Stout are now craftable!
+
+First Aid:
+
+-New Damage Distribution that splits the damage equally on all limbs. Used for explosions.
+-Fixed possible desync on respawn when scaling max health is enabled.
+-Fixed a bug where armor could be applied multiple times, leading to very low damage actually being done.
+-Fixed a crash when another mod healed the player while the connection to the multiplayer server has not been fully established.
+-Hopefully fixed a bug where the health glitched out, leading to the respawn button being unpressable and the player model to glitch as well.
+
+Dynamic Trees:
+
+-Fixed woodland staff running client code on the server.
+-Fixed(hopefully) "Tried to add entity dynamictrees:falling_tree but it was marked as removed already" console spam bug.
+-Fixed explosion-based logging operations crashing game.
+-Loads after Recurrent Complex now (better compatibility).
+
+Wolf Armor & Storage:
+
+-Wild wolves will now howl at a full moon, awoo!
+-Added new "Remove Chest" button to the wolf GUI, allowing you to remove the chest from your wolf.
+-Recipe change for crafting wolf armor.
+-Conformed chainmail wolf armor recipe to new recipe design.
+-Updated smelting recipes to match the new cost of materials for wolf armor, and also fixed a dupe bug with smelting wolf armor as a result (oops).
+-Capability framework replaced with Sponge mixin functionality (performance thing).
+-New, more flexible wolf data structures in saves (performance thing).
+-Moved health and armor display to the bottom of the wolf GUI.
+-Fixed lack of screen darkening behind wolf armor inventories.
+
+KNOWN ISSUES:
+
+-Swapping the fairy or dwarf ring with another ring causes your health to glitch and stay at the lowered amount.  To fix or avoid, take off the ring first normally before putting a new ring on.
+-You cannot attack a Lycanite boss while wearing the Fairy or Dwarf rings.
+-Do NOT use a wormhole or recall potion while riding a lycanite mount or you will omegalol yourself into another dimension.
+-(servers only) There is still a rare bug where chunks randomly decide to not unload, eventually causing some decent server lag.  We still have no idea what's causing it or why (if someone knows hey, I'll take the help LOL), but a quick server restart clears it all up, or if all players simultaneously disconnect.
+
+MASSIVE THANK YOU!!
+
+-Lycanite, who worked directly with me and many other testers, resulting in over 60 test versions of Lycanites, just to get it to where it is now, fixing up every little thing! HUGE POG!!
+-IceBelly as always for all the awesome structure work!
+-Charles, the god coder himself, the Einstein of Java (okay I don't know but this guy is a life-saver, seriously, so much stuff would still be broken with this dude's amazing coding skillz)
+-All of the testers and helpers who worked hard on making sure we CRUSHED all remaining bugs, testing out the new mechanics, and overall contributing to a smooth of a launch as humanly possible!

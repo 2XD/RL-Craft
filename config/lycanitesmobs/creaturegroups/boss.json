@@ -1,0 +1,20 @@
+{
+    "name": "boss",
+    "loadDefault": false,
+    "hunt": [
+        "humanoid"
+    ],
+    "pack": [],
+    "wary": [],
+    "flee":  [],
+    "ignore": [
+        "boss"
+    ],
+    "default": "retaliate",
+    "entityIds": [
+        "iceandfire:firedragon",
+		"iceandfire:icedragon",
+		"iceandfire:seaserpent",
+		"minecraft:ender_dragon"
+    ]
+}
